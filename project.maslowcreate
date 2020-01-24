@@ -10,48 +10,105 @@
             "topLevel": true,
             "allAtoms": [
                 {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 1045,
-                    "y": 156,
-                    "uniqueID": 342774,
+                    "atomType": "RegularPolygon",
+                    "name": "RegularPolygon",
+                    "x": 724,
+                    "y": 76,
+                    "uniqueID": 243466,
                     "ioValues": [
                         {
-                            "name": "x length",
-                            "ioValue": 10
+                            "name": "number of sides",
+                            "ioValue": 5
                         },
                         {
-                            "name": "y length",
-                            "ioValue": 10
+                            "name": "diameter",
+                            "ioValue": 100
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 793,
+                    "y": 196,
+                    "uniqueID": 766857,
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 20
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 200
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
                         }
                     ]
                 },
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 1090,
-                    "y": 176,
+                    "x": 812,
+                    "y": 295,
                     "uniqueID": 674019,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 1000
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 1000
                         }
                     ]
                 },
                 {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 1016,
+                    "y": 273,
+                    "uniqueID": 727902,
+                    "ioValues": []
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
-                    "x": 1722,
-                    "y": 214,
+                    "x": 1425,
+                    "y": 212,
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 243466,
+                    "ap2ID": 766857
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 766857,
+                    "ap2ID": 727902
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 674019,
+                    "ap2ID": 727902
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 727902
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
