@@ -10,6 +10,40 @@
             "topLevel": true,
             "allAtoms": [
                 {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 1045,
+                    "y": 156,
+                    "uniqueID": 342774,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 1090,
+                    "y": 176,
+                    "uniqueID": 674019,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1722,
@@ -21,5 +55,5 @@
             "fileTypeVersion": 1
         }
     ],
-    "circleSegmentSize": 1
+    "circleSegmentSize": "0.1"
 }
